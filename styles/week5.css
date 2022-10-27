@@ -1,0 +1,74 @@
+.body {
+    min-height: 100vh;
+    text-align: center;
+
+}
+
+.header,
+.footer {
+    height: 10vh;
+    background-color: rgb(210, 208, 203);
+}
+
+.header {
+    display: block;
+    padding: 10px;
+}
+
+
+.sectionflex {
+
+    display: flex;
+    flex-wrap: wrap;
+    height: 50vh;
+    width: 60vw;
+    justify-content: center;
+    background-color: rgba(243, 234, 222, 0.758);
+}
+
+.flexp {
+    width: 45%;
+    margin: 10px;
+    width: 45%;
+    background-color: rgb(242, 213, 182);
+}
+
+.flexp3 {
+    justify-content: center;
+    width: 80%;
+    background-color: rgb(242, 213, 182);
+}
+
+.flexh2 {
+    justify-content: center;
+    width: 80%;
+
+
+}
+
+.asideflex {
+    position: absolute;
+    width: 40%;
+    height: 50vh;
+    right: 0;
+    top: 12.5vh;
+    background-color: rgb(222, 253, 235);
+}
+
+.footer {
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+}
+
+a {
+
+    background-color: aliceblue;
+    width: 23%;
+    height: 15vh;
+    flex-grow: 0;
+    padding-top: 14px;
+
+}
