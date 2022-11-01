@@ -1,0 +1,87 @@
+.container {
+display: grid;
+grid-template-columns: 15% 1fr 28%;
+grid-template-rows: 80px 1fr 190px;
+gap: 5px;
+background-color: seashell;
+font-family: 'Dancing Script', cursive;
+
+}
+.header {
+    grid-column: span 4;
+    text-align: center;
+}
+
+.nav {
+display: flex;
+flex-direction: column;
+text-align: center;
+line-height: 5.3;
+justify-content: space-evenly;
+
+}
+
+.navoption {
+    border-radius: 15px;
+    border: rgb(239, 142, 142) dotted;
+    color: rgb(239, 142, 142);
+}
+
+.navoption:hover {
+    color: crimson;
+    background: rgb(239, 142, 142, 0.3);
+}
+
+.main {
+background-color: rgb(239, 142, 142, 0.3);
+border-radius: 15px;
+padding-left: 30px;
+padding-right: 30px;
+text-align: justify;
+line-height: 1.5;
+letter-spacing: 1px;
+font-size: larger;
+}
+
+.divselect {
+    display: flex;
+    flex-direction: column;
+    color: rgb(239, 142, 142);
+}
+
+.fieldset {
+    text-align: center;
+    line-height: 2;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.submit {
+    position: static;
+    color:black;
+    background-color:rgb(239, 142, 142, 0.3);
+    border-radius: 12px;
+}
+
+.asideimage {
+    position: absolute;
+    width: 15%;
+    top: 15px;
+    right: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/pngback1.png);
+    background-size: 15%;
+grid-column: span 4;
+align-items: flex-end;
+
+}
+.footeritem {
+    background-color: rgba(250, 240, 231, 0.7);
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 12px;
+}

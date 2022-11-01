@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donuts</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/week6_layout2.css">
+    <link rel="shortcut icon" href="./assets/pngegg1.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Griffy&display=swap" rel="stylesheet">
+</head>
+
+<body class="container">
+
+    <header class="header">
+
+        <h1>CATALINA's DONUTS</h1>
+
+    </header>
+    <nav class="nav">
+
+        <a class="navoption" href="">MENU</a>
+        <a class="navoption" href="">LOCATIONS</a>
+        <a class="navoption" href="">OUR STORY</a>
+        <a class="navoption" href="">DELIVERY</a>
+        <a class="navoption" href="">CAREERS</a>
+        <a class="navoption" href="">SOCIAL NET</a>
+
+    </nav>
+    <main class="main">
+
+        <h2>History of Donuts</h2>
+        <p>A doughnut or donut (/'doʊnət/) is a type of food made from leavened fried dough.[1]: 275 It is popular in
+            many countries and is prepared in various forms as a sweet snack that can be homemade or purchased in
+            bakeries, supermarkets, food stalls, and franchised specialty vendors. Doughnut is the traditional spelling,
+            while donut is the simplified version; the terms are used interchangeably.
+
+            Doughnuts are usually deep fried from a flour dough, but other types of batters can also be used. Various
+            toppings and flavorings are used for different types, such as sugar, chocolate or maple glazing. Doughnuts
+            may also include water, leavening, eggs, milk, sugar, oil, shortening, and natural or artificial flavors.
+
+            The two most common types are the ring doughnut and the filled doughnut, which is injected with fruit
+            preserves (the jelly doughnut), cream, custard, or other sweet fillings. Small pieces of dough are sometimes
+            cooked as doughnut holes. Once fried, doughnuts may be glazed with a sugar icing, spread with icing or
+            chocolate, or topped with powdered sugar, cinnamon, sprinkles or fruit. Other shapes include balls,
+            flattened spheres, twists, and other forms. Doughnut varieties are also divided into cake (including the
+            old-fashioned) and yeast-risen doughnuts. Doughnuts are often accompanied by coffee or milk. They are sold
+            at doughnut shops, convenience stores, petrol/gas stations, cafes or fast food restaurants.</p>
+    </main>
+    <aside class="aside">
+        <form>
+            <h2>Click to order</h2>
+            <div class="divselect">
+                <h3>Donuts</h3>
+                <select>
+                    <option value="lizard1" selected>Original</option>
+                    <option value="lizard2">Of the Day</option>
+                    <option value="lizard3">Boys</option>
+                    <option value="lizard1">Girls</option>
+                    <option value="lizard2">Special flavored</option>
+                    <option value="lizard3">Surprise</option>
+                </select>
+            </div>
+
+            <div class="divselect">
+                <h3>Size</h3>
+                <select>
+                    <option value="lizard1">S (6)</option>
+                    <option value="lizard2" selected>M (12)</option>
+                    <option value="lizard3">L (24)</option>
+                    <option value="lizard4">Big box XL (50)</option>
+                </select>
+            </div>
+            <div class="divselect">
+                <h3>Add smth</h3>
+                <select>
+                    <option value="lizard1">Poster</option>
+                    <option value="lizard2">Sticker</option>
+                    <option value="lizard3" selected>Surprise</option>
+                    <option value="lizard4">Pen</option>
+                    <option value="lizard5">Note</option>
+                </select>
+            </div>
+
+
+            <fieldset class="fieldset">
+                <legend>Delivery details</legend>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Sra Catalina">
+                </div>
+                <div>
+                    <label for="number">Phone</label>
+                    <input type="tel" id="number" pattern="[0-9]{4}-[0-9]{4}" placeholder="7053 9102">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="sracatalina@gmail.com">
+                </div>
+                <div>
+                    <label for="address">Address</label>
+                    <input type="text" id="address">
+                </div>
+            </fieldset>
+            <div class="divselect">
+                <button class="submit" type="submit">SEND</button>
+            </div>
+
+            <div><img class="asideimage" src="./assets/pngwingmini1.png" alt="three donuts"></div>
+        </form>
+    </aside>
+    <footer class="footer">
+        <div class="footeritem">
+            <h3>Visit us:</h3>
+            <p>Sarmiento 2200, C1044AAH CABA</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13135.17085841881!2d-58.39513820405882!3d-34.60940275886287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbada242fb17%3A0x865f76da0ec1a2aa!2sOnce!5e0!3m2!1sru!2sar!4v1667334811557!5m2!1sru!2sar"
+                width="300" height="80" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+
+</body>
+
+</html>
