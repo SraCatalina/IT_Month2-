@@ -1,24 +1,62 @@
 .container {
-display: grid;
-grid-template-columns: 15% 1fr 28%;
-grid-template-rows: 80px 1fr 190px;
-gap: 5px;
-background-color: seashell;
-font-family: 'Dancing Script', cursive;
-
+    display: grid;
+    grid-template-columns: 15% 1fr 28%;
+    grid-template-rows: 80px 1fr 190px;
+    gap: 5px;
+    background-color: seashell;
+    font-family: 'Dancing Script', cursive;
 }
+
+@media screen and (max-width: 1023px) {
+    .container {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 1fr;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) and (max-height: 968px) {
+    .container {
+        position: static;
+        width: 100%;
+    }
+}
+
 .header {
     grid-column: span 4;
     text-align: center;
 }
 
-.nav {
-display: flex;
-flex-direction: column;
-text-align: center;
-line-height: 5.3;
-justify-content: space-evenly;
+@media screen and (max-width: 1023px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+}
 
+.nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 5.3;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1023px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 767px) and (max-height: 968px) {
+    .nav {
+        display: none;
+    }
 }
 
 .navoption {
@@ -27,26 +65,87 @@ justify-content: space-evenly;
     color: rgb(239, 142, 142);
 }
 
+@media screen and (max-width: 1023px) {
+    .navoption {
+        width: 20vw;
+        height: 5vh;
+        font-size: 0.7em;
+        background-color: rgb(239, 142, 142, 0.3);
+        border-color: crimson;
+        border-style: dotted;
+    }
+}
+
 .navoption:hover {
     color: crimson;
     background: rgb(239, 142, 142, 0.3);
 }
 
 .main {
-background-color: rgb(239, 142, 142, 0.3);
-border-radius: 15px;
-padding-left: 30px;
-padding-right: 30px;
-text-align: justify;
-line-height: 1.5;
-letter-spacing: 1px;
-font-size: larger;
+    background-color: rgb(239, 142, 142, 0.3);
+    border-radius: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-size: larger;
+}
+
+@media screen and (max-width: 1023px) {
+    .main {
+        display: none;
+    }
+}
+
+.aside {
+    width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+    .aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50vw;
+        height: 70vh;
+        background-color: rgb(239, 142, 142, 0.3);
+        border-radius: 15px;
+        border-color: crimson;
+        border-style: dotted;
+    }
+}
+
+@media screen and (max-width: 767px) and (max-height: 968px) {
+    .aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 115vh;
+    }
 }
 
 .divselect {
     display: flex;
     flex-direction: column;
     color: rgb(239, 142, 142);
+}
+
+@media screen and (max-width: 1023px) {
+    .divselect {
+        position: relative;
+        width: 100%;
+        height: 10vh;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) and (max-height: 968px) {
+    .divselect {
+        font-size: 1.5em;
+        height: 15vh;
+    }
 }
 
 .fieldset {
@@ -56,10 +155,17 @@ font-size: larger;
     margin-bottom: 18px;
 }
 
+@media screen and (max-width: 767px) and (max-height: 968px) {
+    .fieldset {
+        font-size: 1.5em;
+        margin-top: 50px;
+    }
+}
+
 .submit {
     position: static;
-    color:black;
-    background-color:rgb(239, 142, 142, 0.3);
+    color: black;
+    background-color: rgb(239, 142, 142, 0.3);
     border-radius: 12px;
 }
 
@@ -70,15 +176,38 @@ font-size: larger;
     right: 20px;
 }
 
+@media screen and (max-width: 1023px) {
+    .asideimage {
+        width: 40%;
+        left: 0%;
+        top: 50%;
+        margin-left: -5%;
+    }
+}
+
+@media screen and (max-width: 767px) and (max-height: 968px) {
+    .asideimage {
+        position: absolute;
+        top: 6%;
+        left: 70%;
+    }
+}
+
 .footer {
     display: flex;
     flex-direction: column;
     background-image: url(../assets/pngback1.png);
     background-size: 15%;
-grid-column: span 4;
-align-items: flex-end;
-
+    grid-column: span 4;
+    align-items: flex-end;
 }
+
+@media screen and (max-width: 1023px) {
+    .footer {
+        display: none;
+    }
+}
+
 .footeritem {
     background-color: rgba(250, 240, 231, 0.7);
     padding-left: 15px;
