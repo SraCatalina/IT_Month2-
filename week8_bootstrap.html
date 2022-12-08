@@ -12,7 +12,18 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <style>
+        .container-fluid,
+        .footer {
+            background-color: rgb(55, 52, 52);
+        }
 
+        .container__welcome {
+            padding-top: 2.6em;
+            padding-bottom: 2.6em;
+            padding-right: 2em;
+        }
+
+        .copyright {}
     </style>
 
 </head>
@@ -20,40 +31,103 @@
 <body>
 
 
-
     <div class="container-fluid">
         <div class="nav justify-content-end">
             <a class="nav-link" href="#">Home</a>
             <a class="nav-link" href="#">About</a>
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                aria-expanded="false">Services</a>
+                aria-expanded="false"> Выбрать услуги</a>
             <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Rent motorcycles</a>
-                <a class="dropdown-item" href="#">Rent sportcars</a>
+                <a class="dropdown-item" href="#">Авиабилеты</a>
+                <a class="dropdown-item" href="#">Отель</a>
                 <a class="dropdown-item" href="#">Auctions</a>
             </div>
             <a class="nav-link" href="#">Contact</a>
         </div>
-
     </div>
 
 
-
+    <div class="container container__welcome">
+        <div class="row">
+            <div class="col">
+                <div class="card bg-light border-primary">
+                    <div class="card-body">
+                        <h5 class="card-title">WELCOME ON BOARD!</h5>
+                        <p class="card-text text-justify">Откройте доступ к бронированию, изменению, онлайн-оплате
+                            билетов в любую
+                            точку
+                            мира. Изучайте новые направления, получайте специальные предложения от наших постоянных
+                            партеров,
+                            летайте с максимальной выгодой. Получайте бонусные баллы и тратьте их на повышение комфорта
+                            авиаперелета, аренду автомобилей и мотоциклов, оплвату услуг профессиональных гидов и многое
+                            другое. Участвуйте в ежегодной лотерее путевок в Северную Америку. Становитесь победителем.
+                        </p>
+                        <a href="#" class="btn btn-primary">Зарегистрироваться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <div class="container">
-        A Warm Welcome!</div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card text-center bg-light border-primary" style="width: 15rem;">
+                    <img class="card-img-top" src="./assets/германия.jpeg" alt="страна Германия">
+                    <div class="card-body">
+                        <h5 class="card-title">Германия</h5>
+                        <p class="card-text text-justify">Бронируйте наши самые популярные направления во Франкфурт,
+                            Мюнхен,
+                            Дюссельдорф.
+                            Получайте скидки. Копите баллы вместе с нами и покупайте авиабилеты бесплатно. </p>
+                        <a href="#" class="btn btn-primary">Заказать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card text-center bg-light border-primary" style="width: 15rem;">
+                    <img class="card-img-top" src="./assets/япония.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Япония</h5>
+                        <p class="card-text text-justify">Выбирайте направления в Киото, Осаку или Токио. В
+                            любой пакет наших услуг входит оформление виз и предоставление перевода документов.
+                            Получайте скидки при заказе гида, копите бонусные баллы.</p>
+                        <a href="#" class="btn btn-primary">Заказать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card text-center bg-light border-primary" style="width: 15rem;">
+                    <img class="card-img-top" src="./assets/нью йорк.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Северная Америка</h5>
+                        <p class="card-text text-justify"> Посетите известные всем города. Большое яблоко - Нью-Йорк,
+                            или Майами, Ордандо, Лас-Вегас и многие другие. Тысячи возможностей и миллион приключений
+                            уже ждут вас.</p>
+                        <a href="#" class="btn btn-primary border-primary">Заказать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card text-center bg-light border-primary" style="width: 15rem;">
+                    <img class="card-img-top" src="./assets/дубай.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">ОАЭ</h5>
+                        <p class="card-text text-justify">Откройте дверь в сказку, культуру арабского мира,
+                            непревзойденный вкус элитного
+                            отдыха в ОАЭ. Посетите Дубай, Абу-даби, пустыни и залив. В пакеты услуг входит аренда люкс
+                            авто.</p>
+                        <a href="#" class="btn btn-primary">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-
-
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-
-    <div class="footer"></div>
-
+    <div class="footer">
+        <p class="copyright-text text-white text-center">Copyright (c) Your Website 2022</p>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
