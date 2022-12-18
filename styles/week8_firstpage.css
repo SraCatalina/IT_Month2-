@@ -1,0 +1,59 @@
+.body {
+    padding: 3em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 15% 70% 15%;
+    grid-template-areas:
+        "header header header"
+        "main main aside"
+        "footer footer footer";
+    font-family: Roboto Slab, sans-serif;
+    background: rgb(117,200,201);
+background: linear-gradient(0deg, rgba(117,200,201,1) 0%, rgba(151,166,255,1) 100%);
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 600;
+}
+
+h4 {
+    font-weight: 600;
+    padding-left: 3em;
+    padding-top: 0.4em;
+}
+
+.btn {
+    width: 9em;
+    height: 3em;
+    background-color: rgb(81, 15, 153);
+    border-radius: 22px;
+    font-weight: 600;
+}
+
+.container__basket {
+    position: absolute;
+    display: flex;
+    justify-content: end;
+
+}
+
+.container__logo {
+    position: absolute;
+}
