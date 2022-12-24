@@ -20,7 +20,7 @@
 .sectionflex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; 
     height: 50vh;
     width: 60vw;
     background-color: rgba(243, 234, 222, 0.758);
